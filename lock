@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiveLock | Smart Door System</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f4f6f8; color: #222; }
+    header {
+      background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+    header h1 {
+      font-size: 48px;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #ccc;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    ul {
+      line-height: 2;
+      padding-left: 20px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .feature-box {
+      background: #f0f2f5;
+      padding: 20px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .price {
+      font-size: 36px;
+      font-weight: bold;
+      color: #007bff;
+    }
+    footer {
+      background: #111;
+      color: #999;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LiveLock™</h1>
+  <p>Smart Security. Smart Living.</p>
+</header>
+
+<section>
+  <div class="card">
+    <h2>Product Overview</h2>
+    <p>
+      LiveLock™ is a smart interior door system designed to combine advanced
+      biometric security, intelligent automation, and user-focused convenience.
+      It transforms traditional doors into interactive, secure, and responsive
+      living technology.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Core Features</h2>
+    <div class="features">
+      <div class="feature-box">Voice-Activated Control</div>
+      <div class="feature-box">Fingerprint Recognition</div>
+      <div class="feature-box">Facial Recognition</div>
+      <div class="feature-box">Smartphone App Control</div>
+      <div class="feature-box">Emergency Auto-Unlock</div>
+      <div class="feature-box">Bluetooth Coffee Trigger</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Materials & Quality</h2>
+    <ul>
+      <li>Reinforced solid-core composite wood structure</li>
+      <li>Recycled aluminum internal framing</li>
+      <li>Tempered smart-glass touch panel</li>
+      <li>Low-energy, long-life sensor technology</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Suggested Retail Price</h2>
+    <p class="price">$2,499 CAD</p>
+  </div>
+
+  <div class="card">
+    <h2>Benefits for Users</h2>
+    <ul>
+      <li>Enhanced home security and privacy</li>
+      <li>Hands-free accessibility for all abilities</li>
+      <li>Customized alerts and automation</li>
+      <li>Time-saving smart routines</li>
+      <li>Improved emergency response and safety</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 LiveLock Smart Systems | Concept Project Website</p>
+</footer>
+
+</body>
+</html>
