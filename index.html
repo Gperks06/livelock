@@ -3,25 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LiveLock | Inclusive Smart Door System</title>
+  <title>LiveLock | Interactive Smart Door</title>
+
+  <!-- Model Viewer Library (free, no credit card) -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', sans-serif; background: #f5f7f9; color: #222; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f5f7f9; color: #222; margin:0; }
     header {
       background: #0b0b0b;
       color: white;
       padding: 80px 20px;
       text-align: center;
     }
-    header h1 { font-size: 48px; letter-spacing: 1px; }
-    header p { font-size: 20px; margin-top: 10px; color: #ccc; }
+    header h1 { font-size: 48px; }
+    header p { color: #ccc; font-size: 20px; }
 
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 20px;
-    }
+    section { max-width: 1100px; margin: auto; padding: 60px 20px; }
 
     .card {
       background: white;
@@ -30,9 +28,6 @@
       margin-bottom: 30px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     }
-
-    h2 { margin-bottom: 20px; font-size: 28px; }
-    p { line-height: 1.8; }
 
     .grid {
       display: grid;
@@ -54,12 +49,20 @@
       color: #007bff;
     }
 
-    footer {
-      background: #111;
-      color: #aaa;
+    .qr {
       text-align: center;
-      padding: 30px;
-      font-size: 14px;
+    }
+
+    .qr img {
+      width: 220px;
+      margin-top: 20px;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 500px;
+      background: #f1f1f1;
+      border-radius: 16px;
     }
   </style>
 </head>
@@ -67,62 +70,49 @@
 
 <header>
   <h1>LiveLock™</h1>
-  <p>Inclusive Smart Door System for Accessible Living</p>
+  <p>Interactive Smart Door Experience</p>
 </header>
 
 <section>
+
   <div class="card">
-    <h2>The Problem</h2>
-    <p>
-      Many individuals experience physical limitations that make traditional doors
-      difficult to use. Challenges include gripping door handles, turning keys,
-      navigating tight spaces, and opening doors while using mobility aids.
-      These barriers affect elderly users and people living with arthritis, carpal tunnel,
-      limb loss, or temporary physical limitations.
-    </p>
+    <h2>View LiveLock in Augmented Reality</h2>
+    <p>Scan this QR code to view the 3D model in your physical space.</p>
+
+    <div class="qr">
+      <img src="Screen%20Shot%202025-12-06%20at%201.51.52%20PM.png" alt="LiveLock QR Code">
+    </div>
   </div>
 
   <div class="card">
-    <h2>The Solution</h2>
-    <p>
-      LiveLock™ is an intelligent interior door designed with empathy and inclusion in mind.
-      It integrates biometric access, smart panels, and voice activation to create a door that
-      responds to the user without requiring physical force.
+    <h2>Interactive 3D Model</h2>
+
+    <!-- Replace model.glb with your actual model filename -->
+    <model-viewer 
+      src="model.glb"
+      camera-controls 
+      auto-rotate 
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      exposure="1"
+      shadow-intensity="1">
+    </model-viewer>
+
+    <p style="margin-top:15px;">
+      Drag with your mouse or touch to rotate the model.
     </p>
   </div>
 
   <div class="card">
     <h2>Key Features</h2>
     <div class="grid">
-      <div class="box">Voice Activated Open & Close</div>
-      <div class="box">Fingerprint Recognition</div>
+      <div class="box">Voice Activation</div>
       <div class="box">Facial Recognition</div>
-      <div class="box">Palm Pattern Scanning</div>
-      <div class="box">Smartphone App Control</div>
-      <div class="box">Emergency Auto-Unlock (Fire Safety)</div>
+      <div class="box">Fingerprint Scanner</div>
+      <div class="box">Palm Recognition</div>
+      <div class="box">Battery Backup System</div>
       <div class="box">Bluetooth Coffee Trigger</div>
-      <div class="box">Manual Lever Handle Backup</div>
     </div>
-  </div>
-
-  <div class="card">
-    <h2>Built-In Safety & Reliability</h2>
-    <ul>
-      <li>Battery backup for power outages</li>
-      <li>Works without Wi-Fi using motion and pressure sensors</li>
-      <li>Passive infrared sensors for emergency response</li>
-      <li>Key-aid inspired manual locking system</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Materials</h2>
-    <ul>
-      <li>Solid-core composite door structure</li>
-      <li>Recycled aluminum internal framing</li>
-      <li>Tempered smart-glass touch panel</li>
-      <li>Durable biometric sensor modules</li>
-    </ul>
   </div>
 
   <div class="card">
@@ -130,20 +120,10 @@
     <p class="price">$2,499 CAD</p>
   </div>
 
-  <div class="card">
-    <h2>Why LiveLock Benefits Users</h2>
-    <ul>
-      <li>Improves independence for people with mobility or dexterity challenges</li>
-      <li>Reduces physical strain and joint pain</li>
-      <li>Enhances home safety and emergency responsiveness</li>
-      <li>Supports aging in place and universal design</li>
-      <li>Allows AR visualization in real spaces before installation</li>
-    </ul>
-  </div>
 </section>
 
-<footer>
-  <p>© 2025 LiveLock™ | Inclusive Design Concept Project</p>
+<footer style="background:#111;color:#aaa;text-align:center;padding:30px;">
+  <p>© 2025 LiveLock™ | Interactive Concept Site</p>
 </footer>
 
 </body>
